@@ -56,13 +56,4 @@ Make sure the required libraries are installed. If needed, run:
 pip install pandas numpy matplotlib scikit-learn statsmodels solas-ai
 
 
-## Results
-The analysis produced fairness and disparate impact results for both the Logistic Regression and Gradient-Boosted Tree models on the cleaned COMPAS dataset.
 
-AIR, ME, and SMD were computed separately for race and sex. The results showed meaningful disparities in selection rates and score distributions across groups. By sex, female defendants had lower selection rates than male defendants, with AIR values below the 0.80 threshold. By race, African-American defendants showed meaningful score disparities, with large SMD values in both models.
-
-The intersectional analysis showed that the worst-group AIR in both models was for **Caucasian / Female**. In the Logistic Regression model, the worst-group AIR was **0.207**. In the Gradient-Boosted model, the worst-group AIR was **0.775**. This shows that harms can become clearer when race and sex are examined together rather than separately.
-
-FPR and FNR disparities were also computed by race. African-American defendants had higher false positive rates than Caucasian defendants in both models, and these differences were statistically significant. This means African-American defendants were more likely to be classified as high risk when the observed outcome was negative. Caucasian defendants had higher false negative rates, meaning they were more likely to be classified as low risk when the observed outcome was positive.
-
-Overall, the results show that the models raise meaningful fairness concerns and that subgroup and intersectional analysis are important for identifying disparity patterns in high-stakes settings.
