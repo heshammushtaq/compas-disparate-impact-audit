@@ -8,7 +8,6 @@ The goal of the analysis is to:
 load and prepare the cleaned COMPAS dataset  
 train and evaluate the Logistic Regression and Gradient-Boosted Tree models  
 compute AIR, ME, and SMD for race  
-compute AIR, ME, and SMD for sex  
 compare disparity results across groups and confirm consistency of the calculations  
 build an intersectional analysis for race × sex  
 identify the worst-group AIR and interpret it  
